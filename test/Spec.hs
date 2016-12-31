@@ -9,15 +9,10 @@ import Test.QuickCheck
 -- | Example based tests
 
 testCases :: [(Int, String)]
-testCases =
-  [(0, "0")
-  ,(1, "1")
-  ,(3, "Fizz")
-  ,(5, "Buzz")
-  ,(7, "7")
-  ,(15, "FizzBuzz")
-  ,(100, "Buzz")]
+testCases = [ (0, "0"), (1, "1"), (3, "Fizz"), (5, "Buzz")
+            , (7, "7"), (15, "FizzBuzz"), (100, "Buzz")]
 
+tests :: Test
 tests = TestList $ map createTestCase testCases
   where
     createTestCase (input, expected) =

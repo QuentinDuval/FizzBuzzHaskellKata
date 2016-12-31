@@ -1,8 +1,4 @@
-{-# LANGUAGE TemplateHaskell #-}
 module FizzBuzz where
-
-import Test.HUnit
-import Test.QuickCheck
 
 
 fizzBuzz :: Int -> String

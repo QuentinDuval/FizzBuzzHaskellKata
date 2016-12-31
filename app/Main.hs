@@ -3,4 +3,4 @@ module Main where
 import FizzBuzz
 
 main :: IO ()
-main = undefined
+main = mapM_ (print . fizzBuzz) [0..100]
